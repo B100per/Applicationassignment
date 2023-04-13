@@ -1,0 +1,10 @@
+<h1>Data Engineers</h1>
+<ul>
+{% for engineer in data_engineers %}
+    <li>
+        <h2>{{ engineer.name }}</h2>
+        <p><strong>Skills:</strong> {{ engineer.skills }}</p>
+        <p><strong>Information:</strong> {{ engineer.information }}</p>
+    </li>
+{% endfor %}
+</ul>
