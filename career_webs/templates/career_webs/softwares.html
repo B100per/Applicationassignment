@@ -1,0 +1,13 @@
+{% extends "career_webs/base.html" %}
+{% block content %}
+<p> Softwares</p>
+<ul>
+  {% for software in softwares %}
+    <li>
+      <a href="{% url 'career_webs:software' software.id %}">{{ software }}</a>
+    </li>
+  {% empty %}
+    <li>No skills have been added yet</li>
+  {% endfor %}
+</ul>
+{% endblock content %}
